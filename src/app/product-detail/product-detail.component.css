@@ -1,0 +1,101 @@
+/* Fundo da página */
+.product-page {
+    background: linear-gradient(to bottom, #000, #333); /* Gradiente de preto */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: #fff; /* Texto branco */
+  }
+  
+  /* Container */
+  .product-container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+  }
+  
+  /* Card principal */
+  .product-card {
+    background: #1c1c1c; /* Fundo preto para o card */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(255, 0, 0, 0.4); /* Sombra com vermelho */
+    overflow: hidden;
+  }
+  
+  /* Header do card */
+  .product-header {
+    background-color: #ff0000; /* Vermelho Ferrari */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Corpo do conteúdo */
+  .product-body {
+    padding: 20px;
+  }
+  
+  /* Texto do conteúdo */
+  .product-body p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .product-body strong {
+    color: #ff0000; /* Vermelho para os títulos */
+  }
+  
+  /* Botões */
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Botão Editar */
+  .btn-warning {
+    background-color: #ff9900; /* Laranja para editar */
+    color: #fff;
+  }
+  
+  .btn-warning:hover {
+    background-color: #e68900;
+    transform: translateY(-3px);
+  }
+  
+  /* Botão Excluir */
+  .btn-danger {
+    background-color: #ff0000; /* Vermelho para excluir */
+    color: #fff;
+  }
+  
+  .btn-danger:hover {
+    background-color: #cc0000;
+    transform: translateY(-3px);
+  }
+  
+  /* Botão Voltar */
+  .btn-secondary {
+    background-color: #555; /* Cinza escuro para voltar */
+    color: #fff;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #333;
+    transform: translateY(-3px);
+  }
+  

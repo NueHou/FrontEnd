@@ -1,0 +1,51 @@
+<div class="ferrari-bg">
+  <div class="container">
+    <!-- Listagem de Clientes -->
+    <h3 class="title">Clientes</h3>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>CPF</th>
+          <th>Endereço</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let client of clients">
+          <td>{{ client.name }}</td>
+          <td>{{ client.cpf }}</td>
+          <td>{{ client.address }}</td>
+          <td class="actions">
+            <a class="btn btn-primary" [routerLink]="['/client-detail', client.id]">Detalhes</a>
+            <a class="btn btn-secondary" [routerLink]="['/clients', client.id]">Editar</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Listagem de Produtos -->
+    <h3 class="title">Produtos</h3>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Descrição</th>
+          <th>Preço</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of products">
+          <td>{{ product.name }}</td>
+          <td>{{ product.description }}</td>
+          <td>R$ {{ product.price }}</td>
+          <td class="actions">
+            <a class="btn btn-primary" [routerLink]="['/product-detail', product.id]">Detalhes</a>
+            <a class="btn btn-secondary" [routerLink]="['/products', product.id]">Editar</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

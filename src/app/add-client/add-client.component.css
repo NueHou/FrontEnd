@@ -1,0 +1,97 @@
+/* Fundo da página */
+.client-page {
+    background: linear-gradient(to bottom, #000, #333); /* Gradiente de preto */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: #fff; /* Texto branco */
+  }
+  
+  /* Container */
+  .client-container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+  }
+  
+  /* Card principal */
+  .client-card {
+    background: #1c1c1c; /* Fundo preto para o card */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(255, 0, 0, 0.4); /* Sombra com vermelho */
+    overflow: hidden;
+  }
+  
+  /* Header do card */
+  .client-header {
+    background-color: #ff0000; /* Vermelho Ferrari */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Corpo do formulário */
+  .client-body {
+    padding: 20px;
+  }
+  
+  /* Formulário */
+  .form-group label {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #555; /* Borda suave */
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #222; /* Fundo escuro */
+    color: #fff; /* Texto branco */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .form-control::placeholder {
+    color: #bbb; /* Cor suave para o placeholder */
+  }
+  
+  .form-control:focus {
+    border-color: #ff0000; /* Borda vermelha no foco */
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+  }
+  
+  /* Botões */
+  .button-group {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Botão Salvar */
+  .btn-save {
+    background-color: #ff0000; /* Vermelho Ferrari */
+    color: #ffffff;
+    margin-top: 20px;
+  }
+  
+  .btn-save:hover {
+    background-color: #cc0000; /* Tom mais escuro no hover */
+    transform: translateY(-3px);
+  }
+  

@@ -1,0 +1,25 @@
+<div class="product-page">
+  <div class="product-container">
+    <div class="product-card">
+      <div class="product-header">
+        <h3>Detalhes do Produto</h3>
+      </div>
+      <div class="product-body">
+        <p><strong>Nome:</strong> {{ product?.name }}</p>
+        <p><strong>Descrição:</strong> {{ product?.description }}</p>
+        <p><strong>Preço:</strong> R$ {{ product?.price }}</p>
+      </div>
+      <div class="card-footer text-right button-group">
+        <button class="btn btn-warning" [routerLink]="['/products', product?.id]">
+          <i class="fas fa-edit"></i> Editar
+        </button>
+        <button class="btn btn-danger" (click)="deleteProduct()">
+          <i class="fas fa-trash-alt"></i> Excluir
+        </button>
+        <button class="btn btn-secondary" (click)="goBack()">
+          <i class="fas fa-arrow-left"></i> Voltar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

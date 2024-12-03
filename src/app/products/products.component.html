@@ -1,0 +1,33 @@
+<div class="product-page">
+  <div class="product-container">
+    <div class="product-card">
+      <div class="product-header">
+        <h3>Cadastrar Novo Produto</h3>
+      </div>
+      <div class="product-body">
+        <form (ngSubmit)="onSubmit()">
+          <!-- Nome do Produto -->
+          <div class="form-group">
+            <label for="name">Nome do Produto</label>
+            <input type="text" class="form-control" id="name" [(ngModel)]="product.name" name="name" placeholder="Digite o nome do produto" required>
+          </div>
+          <!-- Descrição -->
+          <div class="form-group mt-3">
+            <label for="description">Descrição</label>
+            <textarea class="form-control" id="description" [(ngModel)]="product.description" name="description" rows="3" placeholder="Descrição do produto" required></textarea>
+          </div>
+          <!-- Preço -->
+          <div class="form-group mt-3">
+            <label for="price">Preço</label>
+            <input type="number" class="form-control" id="price" [(ngModel)]="product.price" name="price" placeholder="Digite o preço" required>
+          </div>
+          <!-- Botões -->
+          <div class="button-group mt-4">
+            <button type="submit" class="btn btn-save">Salvar Produto</button>
+            <button type="button" class="btn btn-cancel" (click)="cancel()">Cancelar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

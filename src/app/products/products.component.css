@@ -1,0 +1,107 @@
+/* Fundo da página */
+.product-page {
+    background: linear-gradient(to bottom, #000, #333); /* Fundo preto com gradiente suave */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: #fff; /* Texto branco para contraste */
+  }
+  
+  /* Container */
+  .product-container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+  }
+  
+  /* Card principal */
+  .product-card {
+    background: #1c1c1c; /* Preto para o fundo do card */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(255, 0, 0, 0.4); /* Sombra com um toque de vermelho */
+    overflow: hidden;
+  }
+  
+  /* Header */
+  .product-header {
+    background-color: #ff0000; /* Vermelho Ferrari */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Corpo do formulário */
+  .product-body {
+    padding: 20px;
+  }
+  
+  /* Formulário */
+  .form-group label {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #555; /* Borda cinza para suavidade */
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #222; /* Fundo escuro para os inputs */
+    color: #fff; /* Texto branco */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .form-control::placeholder {
+    color: #bbb; /* Placeholder em cinza claro */
+  }
+  
+  .form-control:focus {
+    border-color: #ff0000; /* Foco com borda vermelha */
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+  }
+  
+  /* Botões */
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Botão Salvar */
+  .btn-save {
+    background-color: #ff0000; /* Vermelho Ferrari */
+    color: #ffffff;
+  }
+  
+  .btn-save:hover {
+    background-color: #cc0000; /* Tom mais escuro no hover */
+    transform: translateY(-3px);
+  }
+  
+  /* Botão Cancelar */
+  .btn-cancel {
+    background-color: #333; /* Preto suave */
+    color: #ffffff;
+  }
+  
+  .btn-cancel:hover {
+    background-color: #555; /* Cinza mais claro no hover */
+    transform: translateY(-3px);
+  }
+  

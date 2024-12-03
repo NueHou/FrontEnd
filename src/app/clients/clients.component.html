@@ -1,0 +1,33 @@
+<div class="ferrari-bg">
+  <div class="container mt-5">
+    <div class="card">
+      <div class="card-header bg-dark text-white">
+        <h3 class="card-title">Editar Cliente</h3>
+      </div>
+      <div class="card-body">
+        <form (ngSubmit)="onSubmit()">
+          <!-- Campo para Nome -->
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" class="form-control" id="name" [(ngModel)]="client.name" name="name" required>
+          </div>
+          <!-- Campo para CPF -->
+          <div class="form-group mt-3">
+            <label for="cpf">CPF</label>
+            <input type="text" class="form-control" id="cpf" [(ngModel)]="client.cpf" name="cpf" required>
+          </div>
+          <!-- Campo para Endereço -->
+          <div class="form-group mt-3">
+            <label for="address">Endereço</label>
+            <input type="text" class="form-control" id="address" [(ngModel)]="client.address" name="address" required>
+          </div>
+          <!-- Botões -->
+          <div class="form-actions mt-4">
+            <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+            <button type="button" class="btn btn-secondary" (click)="onCancel()">Cancelar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+<div class="client-page">
+  <div class="client-container">
+    <div class="client-card">
+      <div class="client-header">
+        <h3>Cadastrar Novo Cliente</h3>
+      </div>
+      <div class="client-body">
+        <form (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" class="form-control" id="name" [(ngModel)]="client.name" name="name" required>
+          </div>
+          <div class="form-group mt-3">
+            <label for="cpf">CPF</label>
+            <input type="text" class="form-control" id="cpf" [(ngModel)]="client.cpf" name="cpf" required>
+          </div>
+          <div class="form-group mt-3">
+            <label for="address">Endereço</label>
+            <input type="text" class="form-control" id="address" [(ngModel)]="client.address" name="address" required>
+          </div>
+          <button type="submit" class="btn btn-save">Salvar Cliente</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,107 @@
+/* Página de fundo */
+.details-page {
+    background: linear-gradient(to bottom, #000, #3d3d3d); /* Gradiente preto */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+  }
+  
+  /* Container */
+  .details-container {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Card */
+  .details-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
+  
+  /* Header */
+  .details-header {
+    background-color: #c0392b; /* Vermelho Ferrari */
+    padding: 20px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 3px solid #ff5733;
+  }
+  
+  /* Corpo */
+  .details-body {
+    padding: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .details-body p {
+    margin: 10px 0;
+    color: #ddd;
+  }
+  
+  .details-body span {
+    font-weight: bold;
+    color: #ff5733; /* Cor vermelha para o texto */
+  }
+  
+  /* Rodapé */
+  .details-footer {
+    background-color: #1f1f1f; /* Cor de fundo preta */
+    padding: 15px;
+    text-align: right;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+  }
+  
+  /* Botões */
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  /* Botão Editar */
+  .btn-edit {
+    background-color: #ff9900; /* Laranja Ferrari */
+    color: #fff;
+  }
+  
+  .btn-edit:hover {
+    background-color: #e68900;
+    transform: scale(1.05);
+  }
+  
+  /* Botão Excluir */
+  .btn-delete {
+    background-color: #e74c3c; /* Vermelho forte para excluir */
+    color: #fff;
+  }
+  
+  .btn-delete:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+  }
+  
+  /* Botão Voltar */
+  .btn-back {
+    background-color: #555; /* Cinza escuro para voltar */
+    color: #fff;
+  }
+  
+  .btn-back:hover {
+    background-color: #333;
+    transform: scale(1.05);
+  }
+  

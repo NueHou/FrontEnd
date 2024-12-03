@@ -1,0 +1,105 @@
+/* Fundo inspirado na Ferrari */
+.ferrari-bg {
+    background-image: url('https://via.placeholder.com/1920x1080'); /* Substitua pela imagem desejada */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 50px 0;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Card */
+  .card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .card-header {
+    padding: 15px;
+    background-color: #ff0000;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 1.8rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Form */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    color: #fff;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-control {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .form-control:focus {
+    outline: none;
+    border-color: #ff0000;
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.5);
+  }
+  
+  /* Botões */
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    background-color: #ff0000;
+    color: #fff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #cc0000;
+  }
+  
+  .btn-secondary {
+    background-color: #555;
+    color: #fff;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #333;
+  }
+  

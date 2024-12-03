@@ -1,0 +1,25 @@
+  <div class="details-page">
+    <div class="details-container">
+      <div class="details-card">
+        <div class="details-header">
+          <h3>Detalhes do Produto</h3>
+        </div>
+        <div class="details-body">
+          <p><span>Nome:</span> {{ client?.name }}</p>
+          <p><span>CPF:</span> {{ client?.cpf }}</p>
+          <p><span>Endereço:</span> {{ client?.address }}</p>
+        </div>
+        <div class="details-footer">
+          <button class="btn btn-edit" [routerLink]="['/clients', client?.id]">
+            <i class="fas fa-edit"></i> Editar
+          </button>
+          <button class="btn btn-delete" (click)="deleteClient()">
+            <i class="fas fa-trash-alt"></i> Excluir
+          </button>
+          <button class="btn btn-back" (click)="goBack()">
+            <i class="fas fa-arrow-left"></i> Voltar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
